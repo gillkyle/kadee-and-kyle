@@ -1,0 +1,25 @@
+import * as React from "react";
+import { Helmet } from "react-helmet";
+import Header from "./header";
+import TabNav from "./tabnav";
+import Footer from "./footer";
+
+// styles
+const pageStyles = {
+  color: "#232129",
+  padding: 96,
+  fontFamily: "Cormorant Garamond, -apple-system, Roboto, sans-serif, serif",
+  letterSpacing: 1,
+};
+
+export default function Layout({ children }) {
+  return (
+    <main style={pageStyles}>
+      <Helmet titleTemplate="%s | Kyle Gill" />
+      <Header />
+      <TabNav />
+      {children}
+      <Footer />
+    </main>
+  );
+}

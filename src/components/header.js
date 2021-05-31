@@ -1,5 +1,8 @@
 import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import { differenceInCalendarDays } from "date-fns";
+
+import ClientOnly from "../components/client-only";
 
 const headingStyles = {
   marginTop: 0,
@@ -21,6 +24,8 @@ const paragraphStyles = {
 };
 
 const Header = () => {
+  const daysUntil = differenceInCalendarDays(new Date(2021, 7, 20), new Date());
+
   return (
     <>
       <div
@@ -39,7 +44,11 @@ const Header = () => {
       </div>
       <h1 style={headingStyles}>Kadee & Kyle</h1>
       <p style={paragraphStyles}>August 20, 2021 • Bountiful, UT</p>
-      <p style={paragraphStyles}>80 days to go</p>
+      {daysUntil >= 0 && (
+        <p style={paragraphStyles}>
+          <ClientOnly>{daysUntil} days to go</ClientOnly>
+        </p>
+      )}
     </>
   );
 };

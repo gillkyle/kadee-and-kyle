@@ -1,23 +1,10 @@
 import * as React from "react";
-import Header from "../components/header";
-import TabNav from "../components/tabnav";
-import Footer from "../components/footer";
 import { Box } from "@chakra-ui/react";
-
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: 96,
-  fontFamily: "Cormorant Garamond, -apple-system, Roboto, sans-serif, serif",
-  letterSpacing: 1,
-};
 
 const ThankYou = () => {
   return (
-    <main style={pageStyles}>
+    <div>
       <title>Thank You | Kadee and Kyle</title>
-      <Header />
-      <TabNav />
       <Box textAlign="center" pb={8} maxWidth={460} margin="0 auto">
         <p>
           Thank You! You can expect to receive an invitation in the next few
@@ -31,8 +18,7 @@ const ThankYou = () => {
           able to attend. That's okay!
         </Box>
       </Box>
-      <Footer />
-    </main>
+    </div>
   );
 };
 

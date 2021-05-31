@@ -1,23 +1,10 @@
 import * as React from "react";
-import Header from "../components/header";
-import TabNav from "../components/tabnav";
-import Footer from "../components/footer";
 import { Box } from "@chakra-ui/react";
-
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: 96,
-  fontFamily: "Cormorant Garamond, -apple-system, Roboto, sans-serif, serif",
-  letterSpacing: 1,
-};
 
 const Invitations = () => {
   return (
-    <main style={pageStyles}>
-      <title>Invitations | Kadee and Kyle</title>
-      <Header />
-      <TabNav />
+    <div>
+      <title>Invitations</title>
       <Box textAlign="center" pb={8} maxWidth={460} margin="0 auto">
         <p>
           If you'd like to receive an invitation by mail, please fill out the
@@ -49,8 +36,7 @@ const Invitations = () => {
           height="500"
         ></iframe>
       </Box>
-      <Footer />
-    </main>
+    </div>
   );
 };
 

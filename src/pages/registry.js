@@ -15,10 +15,8 @@ const pageStyles = {
 
 const IndexPage = () => {
   return (
-    <main style={pageStyles}>
-      <title>Home | Kadee and Kyle</title>
-      <Header />
-      <TabNav />
+    <div>
+      <title>Registry</title>
       <Box
         display="flex"
         alignItems="center"
@@ -70,8 +68,7 @@ const IndexPage = () => {
           View Target Registry
         </Button>
       </Box>
-      <Footer />
-    </main>
+    </div>
   );
 };
 

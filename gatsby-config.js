@@ -17,6 +17,18 @@ module.exports = {
       __key: "images",
     },
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Kadee and Kyle`,
+        short_name: `Kadee and Kyle`,
+        start_url: `/`,
+        background_color: `#fff`,
+        theme_color: `#80765b`,
+        display: `standalone`,
+        icon: `src/images/icon.png`,
+      },
+    },
+    {
       resolve: "gatsby-omni-font-loader",
       options: {
         /* Font loading mode */
