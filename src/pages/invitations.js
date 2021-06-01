@@ -34,6 +34,7 @@ const Invitations = () => {
           src="https://tally.so/embed/wkeMMm?hideTitle=1&alignLeft=1&transparentBackground=1"
           width="100%"
           height="500"
+          title="invites"
         ></iframe>
       </Box>
     </div>

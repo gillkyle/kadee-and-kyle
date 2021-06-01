@@ -1,7 +1,4 @@
 import * as React from "react";
-import Header from "../components/header";
-import TabNav from "../components/tabnav";
-import Footer from "../components/footer";
 import { Box } from "@chakra-ui/react";
 import { StaticImage } from "gatsby-plugin-image";
 
