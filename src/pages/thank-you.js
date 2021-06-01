@@ -11,11 +11,8 @@ const ThankYou = () => {
           months. We're excited to celebrate with you.
         </p>
         <Box my={4}>
-          Some friends and family have reached out asking for our Venmo that
-          aren't able to attend. What's more important to us is that we get to
-          see and share support with friends and family on a day that will
-          forever be meaningful to us, but we understand not everyone will be
-          able to attend. That's okay!
+          We understand not everyone will be able to attend, and that's okay! We
+          look forward to seeing as many friends as we can.
         </Box>
       </Box>
     </div>

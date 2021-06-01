@@ -1,23 +1,13 @@
 import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { differenceInCalendarDays } from "date-fns";
-
+import { Heading } from "@chakra-ui/react";
 import ClientOnly from "../components/client-only";
 
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 16,
-  fontSize: 52,
-  fontWeight: `normal`,
-  textTransform: `uppercase`,
-  color: `#80765b`,
-  textAlign: `center`,
-};
 const paragraphStyles = {
   marginBottom: 8,
   fontSize: 16,
   textAlign: `center`,
-  textTransform: `uppercase`,
   color: `#80765b`,
   lineHeight: 1.5,
   letterSpacing: 3,
@@ -42,11 +32,25 @@ const Header = () => {
           width={300}
         />
       </div>
-      <h1 style={headingStyles}>Kadee & Kyle</h1>
+      <Heading
+        as="h1"
+        marginTop={0}
+        marginBottom={3}
+        color="#80765b"
+        fontWeight="normal"
+        textAlign="center"
+        textTransform="uppercase"
+        lineHeight={1.25}
+        size={"2xl"}
+      >
+        Kadee & Kyle
+      </Heading>
       <p style={paragraphStyles}>August 20, 2021 • Bountiful, UT</p>
       {daysUntil >= 0 && (
         <p style={paragraphStyles}>
-          <ClientOnly>{daysUntil} days to go</ClientOnly>
+          <ClientOnly>
+            <b>{daysUntil}</b> days to go
+          </ClientOnly>
         </p>
       )}
     </>
