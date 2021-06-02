@@ -29,7 +29,7 @@ const Header = () => {
           alt="Leaves"
           layout="fixed"
           placeholder="tracedSVG"
-          width={300}
+          width={240}
         />
       </div>
       <Heading

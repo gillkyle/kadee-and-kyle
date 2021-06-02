@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Box, Button } from "@chakra-ui/react";
+import { StaticImage } from "gatsby-plugin-image";
 
 const IndexPage = () => {
   return (
@@ -15,7 +16,7 @@ const IndexPage = () => {
         textAlign="center"
       >
         <Box mb={4}>
-          Thanks for considering contributing to our wish list, we are
+          Thanks for considering contributing to our wish list. We are
           registered at Target.
         </Box>
         <Button
@@ -55,6 +56,18 @@ const IndexPage = () => {
         >
           View Target Registry
         </Button>
+        <Box marginTop={4}>
+          As an alternative, you can also contribute to our Venmo.
+          <Box my={2} />
+          <b>@Kadee-Knupfer</b>
+        </Box>
+        <StaticImage
+          src="../images/venmo.jpg"
+          alt="Leaves"
+          layout="fixed"
+          placeholder="tracedSVG"
+          width={240}
+        />
       </Box>
     </div>
   );
