@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Box, Button } from "@chakra-ui/react";
 import { StaticImage } from "gatsby-plugin-image";
+import { FaAmazon } from "react-icons/fa";
 
 const IndexPage = () => {
   return (
@@ -25,6 +26,7 @@ const IndexPage = () => {
           textTransform="uppercase"
           fontFamily="sans-serif"
           color="white"
+          mb={2}
           as="a"
           href="https://www.target.com/gift-registry/giftgiver?registryId=3c4b8422dccb4f099947e4a6a0d776e1&type=WEDDING"
           target="_blank"
@@ -55,6 +57,19 @@ const IndexPage = () => {
           }
         >
           View Target Registry
+        </Button>
+        <Button
+          colorScheme="yellow"
+          size="lg"
+          textTransform="uppercase"
+          fontFamily="sans-serif"
+          color="white"
+          as="a"
+          href="https://www.amazon.com/wedding/kadee-knupfer-kyle-gill-bountiful-utah-august-2021/registry/1NDWGOKB0NUML"
+          target="_blank"
+          leftIcon={<FaAmazon style={{ transform: `translateY(2px)` }} />}
+        >
+          View Amazon Registry
         </Button>
         <Box marginTop={4}>
           As an alternative, you can also contribute to our Venmo.
